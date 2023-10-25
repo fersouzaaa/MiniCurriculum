@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>MINI CURRICULUM</title>
+        <link rel="stylesheet" href="css/curric.css">
+        <script src="jScript/curric.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>
+                Dados Pessoais
+            </legend>
+                <div id="foto"> 
+                    <img src="Images/3x4.jpg">
+                </div>
+                <div id="curric">
+                    <p> 
+                        <label>
+                            NOME:&nbsp;
+                        </label>
+                        <input type="text" placeholder="Digite seu nome" maxlength="60" id="nome" onkeypress="return somenteLetras()">
+                    </p>
+                    <p>
+                        <label>
+                            DATA DE NASCIMENTO:&nbsp;
+                        </label>
+                        <input type="date" id="dataNasc">
+                    </p>
+                    <p>
+                        <label>
+                            RG:&nbsp;
+                        </label>
+                        <input type="text" id="RG" placeholder="XX.XXX.XXX-X" maxlength="12" onkeypress="return somenteNumeros()">
+                    </p>
+                    <p>
+                        <label>
+                            CPF:&nbsp;
+                        </label>
+                        <input type="text" id="CPF" placeholder="XXX.XXX.XXX-XX" maxlength="14" onkeypress="return somenteNumeros()">
+                    </p>
+                </div>
+                <div class="limpa"></div>
+                <hr>
+                <p>
+                    <label>
+                        TELEFONE&nbsp;
+                    </label>
+                    <input type="text" id="telefone" placeholder="(XX) XXXX-XXXX" maxlength="14" onkeypress="return somenteNumeros()">
+                </p>
+                <p>
+                    <label>
+                        CIDADE&nbsp;
+                    </label>
+                    <input type="text" id="cidade" placeholder="Digite a cidade" maxlength="60">
+                    <label>
+                        ESTADO&nbsp;
+                    </label>
+                    <select>
+                        <option value="">---SELECIONE UM ESTADO---</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="TO">Tocantins</option>
+
+
+                    </select>
+                    <div id="btn">
+                        <button type="submit">ENVIAR</button>
+                    </div>
+                </p>
+        </fieldset> 
+    </body>
+</html>
